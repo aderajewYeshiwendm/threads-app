@@ -1,6 +1,6 @@
 # ThreadsApp
 
-### This is a [Next.js] ThreadsApp built using the following tools and frameworks:
+## This is a [Next.js] ThreadsApp built using the following tools and frameworks:
 
 | Tool             | Description                               |
 | ---------------- | ----------------------------------------- |
