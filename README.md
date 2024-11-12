@@ -1,35 +1,16 @@
 # ThreadsApp
 
-### This is a [Next.js] ThreadsApp built using the following tools and frameworks.
+### This is a [Next.js] ThreadsApp built using the following tools and frameworks:
 
-```bash
- React, Next.js, tailwindcss, typescript,
- shadcn, zod, clerk,
-```
-
-```bash
-Next.js
-```
-
-```bash
-shadcn
-```
-
-```bash
-tailwindcss
-```
-
-```bash
-typescript
-```
-
-```bash
-Zod
-```
-
-```bash
-clerk
-```
+| Tool             | Description                               |
+| ---------------- | ----------------------------------------- |
+| **React**        | UI framework for building components      |
+| **Next.js**      | React framework for server-side rendering |
+| **Tailwind CSS** | Utility-first CSS framework               |
+| **TypeScript**   | Typed JavaScript                          |
+| **shadcn**       | UI component library                      |
+| **Zod**          | Type-safe schema validation               |
+| **Clerk**        | Authentication and user management        |
 
 ## Installation
 
