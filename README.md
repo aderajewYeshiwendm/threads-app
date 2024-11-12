@@ -1,7 +1,10 @@
-This is a [Next.js] ThreadsApp built using the following tools and frameworks.
+# ThreadsApp
+
+### This is a [Next.js] ThreadsApp built using the following tools and frameworks.
 
 ```bash
-React
+ React, Next.js, tailwindcss, typescript,
+ shadcn, zod, clerk,
 ```
 
 ```bash
