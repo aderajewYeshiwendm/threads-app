@@ -7,7 +7,7 @@ import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 async function Page({ params }: { params: { id: string } }) {
-  const { id } = await params;
+  const { id } = params;
   const user = await currentUser();
   if (!user) return null;
   const userInfo = await fetchUser(id);
