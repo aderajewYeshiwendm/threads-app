@@ -18,7 +18,6 @@ export async function createThread({
 }: Params) {
   try {
     connectDB();
-
     const createdThread = await Thread.create({
       text,
       author,
@@ -38,7 +37,7 @@ export async function createThread({
 }
 
 export async function fetchPosts(pageNumber = 1, pageSize = 20) {
-  connectDB();
+  await connectDB();
   //calculate number of posts
   const skipAmount = (pageNumber - 1) * pageSize;
 

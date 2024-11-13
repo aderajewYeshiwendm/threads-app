@@ -22,21 +22,27 @@ async function Page() {
           <>
             {activities.map((activity) => (
               <Link key={activity._id} href={`/thread/${activity.parentId}`}>
-                <article className="activity-card">
-                  <Image
-                    src={activity.author.image}
-                    alt="user"
-                    width={20}
-                    height={20}
-                    className="rounded-full object-cover"
-                  />
+                {activity.author ? (
+                  <article className="activity-card">
+                    <Image
+                      src={activity.author.image}
+                      alt="user"
+                      width={20}
+                      height={20}
+                      className="rounded-full object-cover"
+                    />
+                    <p className="!text-small-regular text-light-1">
+                      <span className="mr-1 text-primary-500">
+                        {activity.author.name}
+                      </span>{" "}
+                      replied to your thread
+                    </p>
+                  </article>
+                ) : (
                   <p className="!text-small-regular text-light-1">
-                    <span className="mr-1 text-primary-500">
-                      {activity.author.name}
-                    </span>{" "}
-                    replied to your thread
+                    Unknown author replied to your thread
                   </p>
-                </article>
+                )}
               </Link>
             ))}
           </>
